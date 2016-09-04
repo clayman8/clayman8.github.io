@@ -67,6 +67,47 @@ nav ul li a.selected {
   color: #000;
 }
 
+.defaultlist
+,.defaultlist li{
+	padding:0px;
+	margin:0px;
+}
+ 
+.defaultlist li{
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
+}
+ 
+.list1 li{
+	position:relative;
+	padding-left:20px;
+}
+ 
+.list1 li:before{
+	content:''; 
+	height:0; 
+	width:0; 
+	display:block; 
+	border:5px transparent solid; 
+	border-right-width:0; 
+	border-left-color:#aaa; 
+	position:absolute; 
+	top:5px; 
+	left:8px;
+}
+ 
+.list1 li:after{
+	content:''; 
+	height:2px; 
+	width:10px; 
+	display:block; 
+	background:#aaa; 
+	position:absolute; 
+	top:9px; 
+	left:0px;
+}
+
 .container {
   max-width: 800px;
   margin: -100px auto 0;
